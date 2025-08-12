@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import subscri from '../json/SubscriptionFAQ.json'
 
-export const SubscriptionFAQ = () => {
+ const SubscriptionFAQ = () => {
     const [openIndex, setOpenIndex] = useState(null);
 
     const handleClick = (index) => {
@@ -23,8 +23,8 @@ export const SubscriptionFAQ = () => {
                                                 <h3 className=" text-base sm:text-[21px] md:text-[28px] font-normal leading-[120%] my-6 text-[#121212] w-full">
                                                     {item.text}
                                                 </h3>
-                                                <img onClick={() => handleClick(index)} className={`cursor-pointer ${isOpen ? "hidden" : "block"}`} src={`src/assets/icons/${item.img}`} alt="img" />
-                                                <img onClick={() => handleClick(index)} className={`cursor-pointer ${isOpen ? "block" : "hidden"}`} src={`src/assets/icons/${item.imge}`} alt="img" />
+                                                <img onClick={() => handleClick(index)} className={`cursor-pointer ${isOpen ? "hidden" : "block"}`} src={`/public/icons/${item.img}`} alt="img" />
+                                                <img onClick={() => handleClick(index)} className={`cursor-pointer ${isOpen ? "block" : "hidden"}`} src={`/public/icons/${item.imge}`} alt="img" />
                                             </div>
                                             <p className={`text-base leading-[140%] font-normal overflow-hidden transition-all duration-500 ease-in-out pb-6 ${isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"  }`} >
                                                 {item.line}
@@ -46,3 +46,5 @@ export const SubscriptionFAQ = () => {
         </div>
     )
 }
+
+export default SubscriptionFAQ

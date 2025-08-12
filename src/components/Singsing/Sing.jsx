@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import apple from '../../assets/icons/Apple.svg';
-import google from '../../assets/icons/Google.svg';
-import editsquare from '../../assets/icons/editsquare.svg';
-import check from '../../assets/icons/check.svg';
+import apple from '/public/icons/Apple.svg';
+import google from '/public/icons/Google.svg';
+import editsquare from '/public/icons/editsquare.svg';
+import check from '/public/icons/check.svg';
 
 export const Sing = () => {
   const [stap, setStap] = useState(1);

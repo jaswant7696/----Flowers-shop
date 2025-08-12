@@ -1,6 +1,6 @@
 import React from 'react'
-import img from '../../assets/image/card_item_cate6.png'
-import close from '../../assets/icons/close.svg'
+import img from '/public/image/card_item_cate6.png'
+import close from '/public/icons/close.svg'
 import { Link } from 'react-router-dom'
 
 export const Card = () => {

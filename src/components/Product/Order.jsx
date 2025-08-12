@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react'
-import lefcolum from '../../assets/image/leftcolum.png'
-import productitem1 from '../../assets/image/productitem1.png'
-import productitem2 from '../../assets/image/productitem2.png'
-import productitem3 from '../../assets/image/productitem3.png'
-import productitem4 from '../../assets/image/productitem4.png'
-import leftarrow from "../../assets/icons/darkleftarrow.svg"
-import rightarrow from "../../assets/icons/darkrightarrow.svg"
+import lefcolum from '/public/image/leftcolum.png'
+import productitem1 from '/public/image/productitem1.png'
+import productitem2 from '/public/image/productitem2.png'
+import productitem3 from '/public/image/productitem3.png'
+import productitem4 from '/public/image/productitem4.png'
+import leftarrow from "/public/icons/darkleftarrow.svg"
+import rightarrow from "/public/icons/darkrightarrow.svg"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -157,7 +157,7 @@ export const Order = () => {
                                                     <>
                                                         <SwiperSlide key={index}>
                                                             <div className="  bg-white ">
-                                                                <img src={`src/assets/image/${vases.img}`} alt={vases}
+                                                                <img src={`/public/image/${vases.img}`} alt={vases}
                                                                     className=" mb-2 w-full max-w-[360px]  h-f object-cover "
                                                                 />
                                                                 <p className="text-sm font-medium">{vases.name}</p>

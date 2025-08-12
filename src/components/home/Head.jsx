@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import image1 from "../../assets/image/img hero.svg"
-// import image1 from "../assets/image/card item.png "
+import image1 from "/public/image/img hero.svg"
 import Product from "../json/banner.json";
-import image2 from "../../assets/icons/arrow_right1.svg";
-import image3 from "../../assets/icons/arrow_left2.svg";
+import image2 from "/public/icons/arrow_right1.svg";
+import image3 from "/public/icons/arrow_left2.svg";
 import { Link } from 'react-router-dom';
 
 
@@ -56,7 +55,7 @@ const Head = () => {
                                                         </div>
                                                     </div>
                                                     <div className='border-l group  transform-all duration-500 overflow-hidden border-b border-black-black_header '>
-                                                        <img className={`transition-all group-hover:scale-110 duration-300 w-full `} src={`/src/assets/image/${items.image}`} alt="" />
+                                                        <img className={`transition-all group-hover:scale-110 duration-300 w-full `} src={`/public/image/${items.image}`} alt="" />
                                                     </div>
                                                 </div>
                                             </>)
@@ -66,7 +65,7 @@ const Head = () => {
                                                 <>
                                                     <div className='overflow-hidden  grid grid-cols-2'>
                                                         <div className='border-l-0 lg:border-l group border-b border-black-black_header transform-all duration-500 overflow-hidden  '>
-                                                            <img className={`transition-all group-hover:scale-110 duration-300  w-full`} src={`/src/assets/image/${items.image}`} alt="" />
+                                                            <img className={`transition-all group-hover:scale-110 duration-300  w-full`} src={`/public/image/${items.image}`} alt="" />
                                                         </div>
                                                         <div className='   border-b border-l border-black-black_header w-full text-center flex justify-center  '>
                                                             <div className="flex flex-col gap-1 justify-center items-center relative   h-[100%]">

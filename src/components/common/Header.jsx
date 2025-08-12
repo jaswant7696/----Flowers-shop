@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import shop from '../../assets/icons/shop2.svg'
-import menu1 from '../../assets/icons/Menu.svg'
-import cross from '../../assets/icons/cross-23.svg'
+import shop from '/public/icons/shop2.svg'
+import menu1 from '/public/icons/Menu.svg'
+import cross from '/public/icons/cross-23.svg'
 import { Link } from 'react-router-dom'
 import { useBlur } from '../../BlurProvider'
 
 
-import img from '../../assets/image/card_item_cate6.png'
-import close from '../../assets/icons/close.svg'
+import img from '/public/image/card_item_cate6.png'
+import close from '/public/icons/close.svg'
 
 
 

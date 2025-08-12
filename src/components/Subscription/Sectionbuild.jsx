@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import image from '../../assets/image/service_Flower.png'
+import image from '/public/image/service_Flower.png'
 import section from '../json/sectionbuild.json'
-export const Sectionbuild = () => {
+ const sectionBuild = () => {
     const [cont, setCont] = useState(1);
 
     return (
@@ -22,7 +22,7 @@ export const Sectionbuild = () => {
                                         <div key={index} className='mt-4' >
                                             <div className='md:flex border border-gray-400 '>
                                                 <div className=' border-b border-gray-lightgray_color sm:border-b-0'>
-                                                    <img className='sm:border-r h-full border-b-0 w-full border-gray-400 ' src={`src/assets/image/${items.image}`} alt="" />
+                                                    <img className='sm:border-r h-full border-b-0 w-full border-gray-400 ' src={`/public/image/${items.image}`} alt="" />
                                                 </div>
                                                 <div className='ml-4'>
                                                     <h1 className=' mt-4  text-lg font-medium leading-[140%] text-black-black_header'>{items.head}</h1>
@@ -84,4 +84,5 @@ export const Sectionbuild = () => {
         </div>
     )
 }
+export default sectionBuild
 

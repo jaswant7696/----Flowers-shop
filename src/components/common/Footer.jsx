@@ -1,9 +1,4 @@
 import React, { useState } from 'react'
-import icon3 from "../../assets/icons/Instagram.svg";
-import icon4 from "../../assets/icons/Pinterest.svg";
-import icon5 from "../../assets/icons/Facebook.svg";
-import icon6 from "../../assets/icons/Twitter.svg";
-import icon7 from "../../assets/icons/Telegram.svg"
 import { Link } from 'react-router-dom';
 
 export const Footer = () => {
@@ -45,11 +40,11 @@ export const Footer = () => {
             <div className='mt-6'>
               <h1 className='text-gray-gray_color  font-medium leading-[120%] text-lg sm:text-[21px]'>Follow Us</h1>
               <div className=' flex justify-between mt-6 max-w-[280px]'>
-                <img className='max-w-6 w-full' src={icon4} alt="icon" />
-                <img className='max-w-6 w-full' src={icon3} alt="icon" />
-                <img className='max-w-6 w-full' src={icon5} alt="icon" />
-                <img className='max-w-6 w-full' src={icon6} alt="icon" />
-                <img className='max-w-6 w-full' src={icon7} alt="icon" />
+                <img className='max-w-6 w-full' src={"/icons/Pinterest.svg"} alt="icon" />
+                <img className='max-w-6 w-full' src={"/icons/Instagram.svg"} alt="icon" />
+                <img className='max-w-6 w-full' src={"/icons/Facebook.svg"} alt="icon" />
+                <img className='max-w-6 w-full' src={"/icons/Twitter.svg"} alt="icon" />
+                <img className='max-w-6 w-full' src={"/icons/Telegram.svg"} alt="icon" />
               </div>
             </div>
           </div>

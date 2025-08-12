@@ -1,10 +1,10 @@
 import React from 'react'
-import story from '../../assets/image/story1.png'
-import icon3 from "../../assets/icons/Instagram.svg";
-import icon4 from "../../assets/icons/Pinterest.svg";
-import icon5 from "../../assets/icons/Facebook.svg";
-import icon6 from "../../assets/icons/Twitter.svg";
-import icon7 from "../../assets/icons/Telegram.svg"
+import story from '/public/image/story1.png'
+import icon3 from "/public/icons/Instagram.svg";
+import icon7 from "/public/icons/Telegram.svg"
+import icon4 from "/public/icons/Pinterest.svg";
+import icon5 from "/public/icons/Facebook.svg";
+import icon6 from "/public/icons/Twitter.svg";
 export const Story = () => {
 
     return (

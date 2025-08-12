@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
-import vector from '../../assets/icons/Vector12.svg'
-import img from '../../assets/image/card_item.png'
-import lock from '../../assets/icons/lock.svg'
-import check from '../../assets/icons/check.svg'
-import editsquare from '../../assets/icons/editsquare.svg'
+import vector from '/public/icons/Vector12.svg'
+import img from '/public/image/card_item.png'
+import lock from '/public/icons/lock.svg'
+import check from '/public/icons/check.svg'
+import editsquare from '/public/icons/editsquare.svg'
 import Commoninput from '../../components/ui/input'
-import calendar from '../../assets/icons/calendar.svg'
-import apple from '../../assets/icons/Apple.svg'
-import google from '../../assets/icons/Google.svg'
-import vector1 from '../../assets/icons/Vector.svg'
-import cheveron from '../../assets/icons/Cheveron25.svg'
-import arrodrop from '../../assets/icons/arrow_drop_down.svg'
+import calendar from '/public/icons/calendar.svg'
+import apple from '/public/icons/Apple.svg'
+import google from '/public/icons/Google.svg'
+import vector1 from '/public/icons/Vector.svg'
+import cheveron from '/public/icons/Cheveron25.svg'
+import arrodrop from '/public/icons/arrow_drop_down.svg'
 export const Sectioncheckout = () => {
     const [button, setButton] = useState(false)
     const [stap, setStap] = useState(1)
@@ -20,10 +20,10 @@ export const Sectioncheckout = () => {
                 <div className='border border-b-0 border-black-black_header'>
                     <div className='lg:grid lg:grid-cols-2 flex flex-col-reverse'>
 
-                        <div className='sm:px-20 px-4  '>
+                        <div className='sm:px-20 px-4 '>
 
                             <>
-                                <div className='flex gap-3 pt-10'>
+                                <div >
                                     <div className='flex gap-2'>
                                         <h1 className={`font-medium text-sm  leading-[120%] ${stap === 1 ? "text-black-black_header" : "text-gray-gray_color"}`}>INFORMATION</h1>
                                         <img src={vector} alt="vector" />

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Sectionwork = () => {
+ const Sectionwork = () => {
     return (
         <div>
             <div className='container'>
@@ -31,3 +31,4 @@ export const Sectionwork = () => {
         </div>
     )
 }
+export default Sectionwork

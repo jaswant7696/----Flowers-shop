@@ -1,12 +1,12 @@
 import React from 'react'
-import image1 from "../../assets/image/Right_colum.png";
-import icon1 from "../../assets/icons/call.svg";
-import icon2 from "../../assets/icons/pin_drop.svg";
-import icon3 from "../../assets/icons/Instagram.svg";
-import icon4 from "../../assets/icons/Pinterest.svg";
-import icon5 from "../../assets/icons/Facebook.svg";
-import icon6 from "../../assets/icons/Twitter.svg";
-import icon7 from "../../assets/icons/Telegram.svg";
+import image1 from "/public/image/Right_colum.png";
+import icon1 from "/public/icons/call.svg";
+import icon2 from "/public/icons/pin_drop.svg";
+import icon3 from "/public/icons/Instagram.svg";
+import icon4 from "/public/icons/Pinterest.svg";
+import icon5 from "/public/icons/Facebook.svg";
+import icon6 from "/public/icons/Twitter.svg";
+import icon7 from "/public/icons/Telegram.svg";
 const Contacts = () => {
     return (
         <div>

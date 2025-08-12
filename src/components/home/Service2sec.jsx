@@ -1,12 +1,11 @@
 import React from 'react'
-import ddf from "../../assets/image/Service_Section.jpg"
 
 const Service2sec = () => {
     return (
         <div>
             <div className='container'>
             <div className='border border-t-0 border-black-black_header'>
-                <div className={`w-full h-screen bg-center bg-cover  bg-fixed justify-center items-center grid  bg-[url(../src/assets/image/fixed.png)]`}>
+                <div className={`w-full h-screen bg-center bg-cover  bg-fixed justify-center items-center grid  bg-[url(/public/image/fixed.png)]`}>
                     <div className='text-center max-w-[586px] mx-4 '>
                         <div className=''>
                             <p className='font-medium text-xs sm:text-sm leading-[120%] text-white-white_color'>SERVICE</p>

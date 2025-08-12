@@ -1,6 +1,6 @@
 import React from 'react'
-import subscription from '../../assets/image/subscription.png'
-export const Section = () => {
+import subscription from '/public/image/subscription.png'
+ const Section = () => {
     return (
         <div className='md:mt-[83px] mt-[62px]' >
             <div className='container'>
@@ -32,3 +32,4 @@ export const Section = () => {
     </div>
     )
 }
+export default Section
