@@ -17,7 +17,7 @@ export const Header = () => {
     const [menu, setMenu] = useState(false)
     const [shop1, setShop1] = useState(false)
     const { setIsBlur } = useBlur();
-    const [card, setCard] = useState(false)
+    const [card, setCard] = useState(true)
     const [remove, setRemove] = useState(false)
 
     const [slide, SetSlide] = useState(false);
