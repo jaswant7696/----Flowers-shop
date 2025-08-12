@@ -55,7 +55,7 @@ const Head = () => {
                                                         </div>
                                                     </div>
                                                     <div className='border-l group  transform-all duration-500 overflow-hidden border-b border-black-black_header '>
-                                                        <img className={`transition-all group-hover:scale-110 duration-300 w-full `} src={`/public/image/${items.image}`} alt="" />
+                                                        <img className={`transition-all group-hover:scale-110 duration-300 w-full `} src={`${items.image}`} alt="" />
                                                     </div>
                                                 </div>
                                             </>)
@@ -65,7 +65,7 @@ const Head = () => {
                                                 <>
                                                     <div className='overflow-hidden  grid grid-cols-2'>
                                                         <div className='border-l-0 lg:border-l group border-b border-black-black_header transform-all duration-500 overflow-hidden  '>
-                                                            <img className={`transition-all group-hover:scale-110 duration-300  w-full`} src={`/public/image/${items.image}`} alt="" />
+                                                            <img className={`transition-all group-hover:scale-110 duration-300  w-full`} src={`${items.image}`} alt="" />
                                                         </div>
                                                         <div className='   border-b border-l border-black-black_header w-full text-center flex justify-center  '>
                                                             <div className="flex flex-col gap-1 justify-center items-center relative   h-[100%]">
