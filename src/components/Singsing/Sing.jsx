@@ -9,8 +9,8 @@ export const Sing = () => {
 
   return (
     <div className="md:mt-[83px] mt-[62px]">
-      <div className="container  grid grid-cols-[25%,50%,25%]">
-        <div></div>
+      <div className="container flex sm:grid grid-cols-[25%,50%,25%] ">
+        <div className="w-0"></div>
         <div className="mx-auto  ">
           <div className="border border-black-black_header border-b-0">
             <div className="sm:p-20 px-4 sm:pb-10 py-10">

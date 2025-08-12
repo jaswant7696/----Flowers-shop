@@ -9,13 +9,13 @@
     margin: 0;
     box-sizing: border-box;
   }
-/* 
+
   .container {
     max-width: 1440px;
     padding: 0;
     width: 100%;
     margin: 0 auto;
-  } */
+  }
 
   @layer base {
     @font-face {

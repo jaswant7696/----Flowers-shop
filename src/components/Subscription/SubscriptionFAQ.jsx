@@ -12,7 +12,7 @@ import subscri from '../json/SubscriptionFAQ.json'
             <div className='container'>
                 <div className=' border border-black-black_header  border-b-0 bg-[#F5F5F7] '>
                     <div className='py-20   '>
-                        <div className='border-black-black_header border justify-self-center max-w-[864px] lg:px-20 px-10 py-20'>
+                        <div className='border-black-black_header border justify-self-center max-w-[864px] lg:px-20 px-5 py-20'>
                             <h1 className='font-semibold text-[50px] text-black-black_header mt-20] leading-[120%]'>Subscription FAQ</h1>
                             <div className="flex max-w-[704px] mt-10 w-full flex-col">
                                 {subscri.map((item, index) => {

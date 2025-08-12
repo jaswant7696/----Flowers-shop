@@ -32,28 +32,27 @@ export const Header = () => {
                 <div className='container relative ' >
                     <>
 
-                        <div className='  grid grid-cols-4 bg-w  md:border border-solid border-black-black_header ' >
+                        <div className='  flex justify-between bg-w  md:border border-solid border-black-black_header ' >
 
                             <div className=' hidden md:grid  grid-cols-2   ' >
-                                <Link to={"/"}> <p className=' text-base font-medium  leading-[19.2px] text-black-black_header text-gray-dark py-[32px] justify-center items-center flex border-r-[1px] border-solid border-black-black_header  ' >Shop</p></Link>
-                                <p className='text-base font-medium leading-[19.2px] text-black-black_header text-gray-dark py-[32px] justify-center items-center flex  border-r-[1px] border-solid border-black-black_header '>Contact</p>
+                                <Link to={"/"}> <p className=' text-base font-medium  leading-[19.2px] text-black-black_header text-gray-dark py-[32px] justify-center items-center flex border-r-[1px] border-solid border-black-black_header px-[70px] ' >Shop</p></Link>
+                                <p className='text-base font-medium leading-[19.2px] text-black-black_header text-gray-dark py-[32px] justify-center items-center flex px-[58px]  border-r-[1px] border-solid border-black-black_header '>Contact</p>
                             </div>
 
-                            <div className='' > </div>
-                            <div></div>
 
                             <div >
                                 <div className='hidden md:grid  grid-cols-2 '>
-                                    <Link to={"sing"}>  <p className='text-base font-medium leading-[19.2px] text-black-black_header text-gray-dark py-[32px] justify-center items-center flex  border-l-[1px] border-solid border-black-black_header'> Sign in</p></Link>
+                                    <Link to={"sing"}>  <p className='text-base font-medium leading-[19.2px] text-black-black_header text-gray-dark py-[32px] px-[65px] justify-center items-center flex  border-l-[1px] border-solid border-black-black_header'> Sign in</p></Link>
 
 
-                                    <button> <p onClick={() => setCard(!card)} className={` text-base font-medium leading-[19.2px] text-black-black_header text-gray-dark py-[32px] justify-center items-center flex  border-l-[1px] border-solid border-black-black_header `}>Cart</p></button>
+                                    <button> <p onClick={() => setCard(!card)} className={` text-base px-[73px] font-medium leading-[19.2px] text-black-black_header text-gray-dark py-[32px] justify-center items-center flex  border-l-[1px] border-solid border-black-black_header `}>Cart</p></button>
                                 </div>
 
                             </div>
 
 
                         </div>
+
 
                         <div className='md:hidden flex relative justify-between border border-black-black_header'>
                             <div className="relative border-r transition-0.2s ease-out  border-black-black_header py-4 px-4">
@@ -63,8 +62,8 @@ export const Header = () => {
                                 </button>
 
 
-                                <>
-                                    <div onClick={() => SetSlide(true)} className={`fixed top-0 h-full z-50 md:hidden transition-all duration-500 ${menu ? "left-0" : "left-[-100%]"}`} >
+                                
+                                    <div onClick={() => SetSlide(true)} className={`fixed top-0 h-full z-50 md:hidden transition-all duration-500 ${menu ? "left-0 w-[0px]" : "left-[-100%] w-[300px]"}`} >
 
                                         <div className="bg-white-white_color w-[320px] right-0 h-full flex flex-col backdrop-blur-3xl border-x border-y border-black-black_header shadow-lg">
                                             <button
@@ -76,29 +75,31 @@ export const Header = () => {
                                             >
                                                 <img className="max-w-6 w-full" src={cross} alt="close" />
                                             </button>
-
-                                            <ul>
-                                                <Link to={"/sing"}>
+{
+    menu &&
+    <>
+<ul>
+                                                <Link onClick={()=>setMenu(false)} to={"/sing"}>
                                                     <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
                                                         Sign in
                                                     </li>
                                                 </Link>
-                                                <Link to={"/Product"}>
+                                                <Link onClick={()=>setMenu(false)} to={"/Product"}>
                                                     <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
                                                         Shop
                                                     </li>
                                                 </Link>
-                                                <Link to={"/Subscription"}>
+                                                <Link onClick={()=>setMenu(false)} to={"/Subscription"}>
                                                     <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
                                                         Service
                                                     </li>
                                                 </Link>
-                                                <Link to={""}>
+                                                <Link onClick={()=>setMenu(false)} to={""}>
                                                     <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
                                                         Contact
                                                     </li>
                                                 </Link>
-                                                <Link to={"/Ourstory"}>
+                                                <Link onClick={()=>setMenu(false)} to={"/Ourstory"}>
                                                     <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
                                                         About us
                                                     </li>
@@ -115,14 +116,16 @@ export const Header = () => {
                                                     Privacy policy
                                                 </li>
                                             </ul>
+                                            </>
+}
+                                            
                                         </div>
                                     </div>
-                                </>
                             </div>
-                            <div className='border-l border-black-black_header  py-4 px-4'>
+                            <div className='border-l mr-[2px] border-black-black_header  py-4 px-4'>
                                 <button onClick={() => setShop1(!shop1)} >
-                                    <img className={`${shop1 ? "hidden" : "block"}`} src={shop} alt="shop" />
-                                    <img className={`max-w-6 w-full ${shop1 ? "block" : "hidden"} `} src={cross} alt="" />
+                                    <img onClick={() => setCard(!card)} className={`${shop1 ? "hidden" : "block"}`} src={shop} alt="shop" />
+                                    <img onClick={() => setCard(false)} className={`max-w-6 w-full ${shop1 ? "block" : "hidden"} `} src={cross} alt="" />
                                 </button>
                                 {shop1 && (
                                     <>
