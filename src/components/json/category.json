@@ -1,0 +1,52 @@
+[
+    {
+        "image": "card_item.png",
+        "text": "Snowfall",
+        "button_text": "price 70$"
+    },
+    {
+        "image": "card _tem_category2.png",
+        "text": "Dawn's Delight",
+        "button_text": "price 70$"
+    },
+    {
+        "image": "card_item_category3.png",
+        "text": "Pink Elegance",
+        "button_text": "price 70$"
+    },
+    {
+        "image": "card_item_category4.png",
+        "text": "Rustic Charm",
+        "button_text": "price 70$"
+    },
+    {
+        "image": "card_item_cate5.png",
+        "text": "Autumn Symphony",
+        "button_text": "price 70$"
+    },
+    {
+        "image": "card_item_cate6.png",
+        "text": "Rosy Delight",
+        "button_text": "price 70$"
+    },
+    {
+        "image": "card_item_cate7.png",
+        "text": "Serenity",
+        "button_text": "price 89$"
+    },
+    {
+        "image": "card_item_cate8.png",
+        "text": "Blue Harmony",
+        "button_text": "price 55$"
+    },
+    {
+        "image": "card_item_cate9.png",
+        "text": "Mystical Majesty",
+        "button_text": "price 80$"
+    },
+    {
+        "image": "card_item_cate10.png",
+        "text": "Blazing Blossoms",
+        "button_text": "price 70$"
+    }
+]

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+/* 
+  .container {
+    max-width: 1440px;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+  } */
+
+  @layer base {
+    @font-face {
+      font-family: "gilroy_med";
+      src: url("../assets//font/Gilroy-Medium.ttf");
+      font-weight: 500;
+
+    }
+
+  }
+
+ @layer base {
+    @font-face {
+      font-family: "Zapfino";
+      src: url("../assets/font/Zapfino.ttf");
+      font-weight: 500;
+
+    }
+    
+  }
+
+}

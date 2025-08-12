@@ -1,0 +1,42 @@
+
+[
+    {
+      "head": "Classic",
+      "image":"bouquet1.png",
+      "data": [
+        "Price $45",
+        "Free Delivery",
+        "Best for a budget",
+        "Glass vase with first delivery",
+        "Save up to 25%"
+      ],
+      "button": "SELECT"
+    },
+    {
+      "head": "Seasonal",
+      "image":"bouquet2.png",
+      "data": [
+        "Price $65",
+        "Free Delivery",
+        "Best seasonal selections",
+        "Glass vase with first delivery",
+        "Luxury candle with your first delivery",
+        "Save up to 28%"
+      ],
+      "button": "SELECT"
+    },
+    {
+      "head": "Luxe",
+      "image":"bouquet3.png",
+      "data": [
+        "Price $95",
+        "Free Delivery",
+        "Premium arrangement",
+        "Premium vase with first delivery",
+        "Luxury candle with your first delivery",
+        "Save up to 30%"
+      ],
+      "button": "SELECT"
+    }
+  ]
+  
