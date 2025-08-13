@@ -10,32 +10,32 @@ const Head = () => {
     // const [active, setActive] = useState(false)
     const data=[
         {
-            "image":"../../../public/image/card_item.png",
+            "image":"/public/image/card_item.png",
             "text":"Fresh Flowers",
             "button_text":"Shop now",
             "arroy":"arrow_right1.svg" 
             
         },
         {
-            "image":"../../../public/image/card_item1.png",
+            "image":"/public/image/card_item1.png",
             "text":"Dried Flowers",
             "button_text":"Shop now",
             "arroy":"arrow_left2.svg"
         },
         {
-            "image":"../../../public/image/card_item2.png",
+            "image":"/public/image/card_item2.png",
             "text":"Live Plants ",
             "button_text":"Shop now",
             "arroy":"arrow_right1.svg"
         },
         {
-            "image":"../../../public/image/card_item3.png",
+            "image":"/public/image/card_item3.png",
             "text":"Aroma Candels",
             "button_text":"Shop now",
             "arroy":"arrow_left2.svg"
         },
         {
-            "image":"../../../public/image/card_item4.png",
+            "image":"/public/image/card_item4.png",
             "text":"Fresheners",
             "button_text":"Shop now",
             "arroy":"arrow_right1.svg"

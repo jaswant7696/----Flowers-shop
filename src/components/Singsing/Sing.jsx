@@ -9,7 +9,7 @@ export const Sing = () => {
 
   return (
     <div className="md:mt-[83px] mt-[62px]">
-      <div className="container flex sm:grid grid-cols-[25%,50%,25%] ">
+      <div className="container flex sm:grid    lg:grid-cols-[20%,60%,20%] xl:grid-cols-[25%,50%,25%] ">
         <div className="w-0"></div>
         <div className="mx-auto  ">
           <div className="border border-black-black_header border-b-0">

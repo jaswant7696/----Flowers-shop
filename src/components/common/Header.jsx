@@ -62,65 +62,65 @@ export const Header = () => {
                                 </button>
 
 
-                                
-                                    <div onClick={() => SetSlide(true)} className={`fixed top-0 h-full z-50 md:hidden transition-all duration-500 ${menu ? "left-0 w-[0px]" : "left-[-100%] w-[300px]"}`} >
 
-                                        <div className="bg-white-white_color w-[320px] right-0 h-full flex flex-col backdrop-blur-3xl border-x border-y border-black-black_header shadow-lg">
-                                            <button
-                                                className="border-b border-black-black_header p-[18.5px]"
-                                                onClick={() => {
-                                                    setMenu(false);
-                                                    SetSlide(false);
-                                                }}
-                                            >
-                                                <img className="max-w-6 w-full" src={cross} alt="close" />
-                                            </button>
-{
-    menu &&
-    <>
-<ul>
-                                                <Link onClick={()=>setMenu(false)} to={"/sing"}>
-                                                    <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
-                                                        Sign in
+                                <div onClick={() => SetSlide(true)} className={`fixed top-0 h-full z-50 md:hidden transition-all duration-500 ${menu ? "left-0 w-[0px]" : "left-[-100%] w-[300px]"}`} >
+
+                                    <div className="bg-white-white_color w-[320px] right-0 h-full flex flex-col backdrop-blur-3xl border-x border-y border-black-black_header shadow-lg">
+                                        <button
+                                            className="border-b border-black-black_header p-[18.5px]"
+                                            onClick={() => {
+                                                setMenu(false);
+                                                SetSlide(false);
+                                            }}
+                                        >
+                                            <img className="max-w-6 w-full" src={cross} alt="close" />
+                                        </button>
+                                        {
+                                            menu &&
+                                            <>
+                                                <ul>
+                                                    <Link onClick={() => setMenu(false)} to={"/sing"}>
+                                                        <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
+                                                            Sign in
+                                                        </li>
+                                                    </Link>
+                                                    <Link onClick={() => setMenu(false)} to={"/Product"}>
+                                                        <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
+                                                            Shop
+                                                        </li>
+                                                    </Link>
+                                                    <Link onClick={() => setMenu(false)} to={"/Subscription"}>
+                                                        <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
+                                                            Service
+                                                        </li>
+                                                    </Link>
+                                                    <Link onClick={() => setMenu(false)} to={""}>
+                                                        <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
+                                                            Contact
+                                                        </li>
+                                                    </Link>
+                                                    <Link onClick={() => setMenu(false)} to={"/Ourstory"}>
+                                                        <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
+                                                            About us
+                                                        </li>
+                                                    </Link>
+                                                </ul>
+                                                <ul className="p-6">
+                                                    <li className="sm:text-base text-sm font-medium leading-[120%]">
+                                                        Shipping & returns
                                                     </li>
-                                                </Link>
-                                                <Link onClick={()=>setMenu(false)} to={"/Product"}>
-                                                    <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
-                                                        Shop
+                                                    <li className="sm:text-base text-sm font-medium leading-[120%] mt-4">
+                                                        Terms & conditions
                                                     </li>
-                                                </Link>
-                                                <Link onClick={()=>setMenu(false)} to={"/Subscription"}>
-                                                    <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
-                                                        Service
+                                                    <li className="sm:text-base text-sm font-medium leading-[120%] mt-4">
+                                                        Privacy policy
                                                     </li>
-                                                </Link>
-                                                <Link onClick={()=>setMenu(false)} to={""}>
-                                                    <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
-                                                        Contact
-                                                    </li>
-                                                </Link>
-                                                <Link onClick={()=>setMenu(false)} to={"/Ourstory"}>
-                                                    <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
-                                                        About us
-                                                    </li>
-                                                </Link>
-                                            </ul>
-                                            <ul className="p-6">
-                                                <li className="sm:text-base text-sm font-medium leading-[120%]">
-                                                    Shipping & returns
-                                                </li>
-                                                <li className="sm:text-base text-sm font-medium leading-[120%] mt-4">
-                                                    Terms & conditions
-                                                </li>
-                                                <li className="sm:text-base text-sm font-medium leading-[120%] mt-4">
-                                                    Privacy policy
-                                                </li>
-                                            </ul>
+                                                </ul>
                                             </>
-}
-                                            
-                                        </div>
+                                        }
+
                                     </div>
+                                </div>
                             </div>
                             <div className='border-l mr-[2px] border-black-black_header  py-4 px-4'>
                                 <button onClick={() => setShop1(!shop1)} >
@@ -149,9 +149,10 @@ export const Header = () => {
                     </>
 
                     <>
-                        <div className={`${card ? "hidden" : "block"} w-full  h-screen bg-opacity-100 backdrop-blur-sm z-40  max-w-[50%] bg-white-white_color justify-self-end absolute top-[1px] border-r  border-t-0 border-black-black_header border-b-0 `}>
-                            <div onClick={(e)=>e.preventDefault()} className=' lg:border-l sticky border-0 border-black-black_header '>
-                                <div className='flex justify-between sm:px-10 px-4 top-0 py-[29px]'  onClick={() => setCard(!card)}>
+                        <div className={`${card ? "hidden" : "block"}   h-screen bg-opacity-100 backdrop-blur-sm z-40  
+                        lg:w-[50%] w-full lg:max-w-[720px]  bg-white-white_color justify-self-end absolute top-[1px] border-r  border-t-0 border-black-black_header border-b-0 `}>
+                            <div onClick={(e) => e.preventDefault()} className=' border-l sticky border-0 border-black-black_header '>
+                                <div className='flex justify-between sm:px-10 px-4 top-0 md:py-[29.5px] py-[18.5px]' onClick={() => setCard(!card)}>
                                     <h1>Shopping Cart</h1>
                                     <img onClick={() => setCard(true)} className={` `} src={close} alt="" />
                                 </div>
