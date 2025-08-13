@@ -12,11 +12,11 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 const vases = [
-    { name: "Glass Vase", price: "$15", img: "producttop1.png" },
-    { name: "Hammershoi", price: "$45", img: "producttop2.png" },
-    { name: "Ceramic Vase", price: "$35", img: "producttop3.png" },
-    { name: "Steel vase", price: "$25", img: "producttop4.png" },
-    { name: "Bamboo", price: "$36", img: "producttop5.png" },
+    { name: "Glass Vase", price: "$15", img: "/image/producttop1.png" },
+    { name: "Hammershoi", price: "$45", img: "/image/producttop2.png" },
+    { name: "Ceramic Vase", price: "$35", img: "/image/producttop3.png" },
+    { name: "Steel vase", price: "$25", img: "/image/producttop4.png" },
+    { name: "Bamboo", price: "$36", img: "/image/producttop5.png" },
 ];
 export const Order = () => {
 
@@ -157,7 +157,7 @@ export const Order = () => {
                                                     <>
                                                         <SwiperSlide key={index}>
                                                             <div className="  bg-white ">
-                                                                <img src={`/image/${vases.img}`} alt={vases}
+                                                                <img src={`${vases.img}`} alt={vases}
                                                                     className=" mb-2 w-full max-w-[360px]  h-f object-cover "
                                                                 />
                                                                 <p className="text-sm font-medium">{vases.name}</p>
