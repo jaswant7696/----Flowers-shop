@@ -1,6 +1,6 @@
 [
     {
-        "image":"../../../public/image/card_item.png",
+        "image":"/public/image/card_item.png",
         "text":"Fresh Flowers",
         "button_text":"Shop now",
         "arroy":"arrow_right1.svg" 
