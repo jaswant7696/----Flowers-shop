@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { useBlur } from '../../BlurProvider'
 
 
-import img from '/public/image/card_item_cate6.png'
+import img from '/image/card_item_cate6.png'
 import close from '/public/icons/close.svg'
 
 

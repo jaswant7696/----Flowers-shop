@@ -11,7 +11,7 @@ export const Story3 = () => {
                 return (<>
                   <div className='grid lg:grid-cols-2'>
                     <div className='border-r border-black-black_header'>
-                      <img className='w-full' src={`/public/image/${items.img}`} alt="" />
+                      <img className='w-full' src={`/image/${items.img}`} alt="" />
                     </div>
                     <div className=' sm:mx-20 mx-4 ms:my-20 my-10'>
                       <h1 className='font-medium sm:text-[38px] text-[26px] text-black-black_header leading-[120%]'>{items.text}</h1>
@@ -27,7 +27,7 @@ export const Story3 = () => {
                       <p className='font-normal text-base text-black-black_header leading-[140%] mt-4'>{items.line}</p>
                     </div>
                     <div className='border-l border-black-black_header'>
-                      <img className='w-full' src={`/public/image/${items.img}`} alt="" />
+                      <img className='w-full' src={`/image/${items.img}`} alt="" />
                     </div>
                   </div>
                 </>)

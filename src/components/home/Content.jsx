@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import Google from "/public/image/GoogleLogo.png";
+import Google from "/image/GoogleLogo.png";
 import RightArrow from "/public/icons/RightArrow.svg"
 import LeftArrow from "/public/icons/LeftArrow.svg"
 // Import Swiper React components

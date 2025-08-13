@@ -1,5 +1,5 @@
 import React from 'react'
-import image1 from "/public/image/Right_colum.png";
+import image1 from "/image/Right_colum.png";
 import icon1 from "/public/icons/call.svg";
 import icon2 from "/public/icons/pin_drop.svg";
 import icon3 from "/public/icons/Instagram.svg";

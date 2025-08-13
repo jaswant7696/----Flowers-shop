@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '/public/image/card_item_cate6.png'
+import img from '/image/card_item_cate6.png'
 import close from '/public/icons/close.svg'
 import { Link } from 'react-router-dom'
 

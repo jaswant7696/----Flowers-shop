@@ -1,5 +1,5 @@
 import React from 'react'
-import story from '/public/image/story1.png'
+import story from '/image/story1.png'
 import icon3 from "/public/icons/Instagram.svg";
 import icon7 from "/public/icons/Telegram.svg"
 import icon4 from "/public/icons/Pinterest.svg";

@@ -1,5 +1,5 @@
 import React from 'react'
-import subscription from '/public/image/subscription.png'
+import subscription from '/image/subscription.png'
  const Section = () => {
     return (
         <div className='md:mt-[83px] mt-[62px]' >

@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react'
-import lefcolum from '/public/image/leftcolum.png'
-import productitem1 from '/public/image/productitem1.png'
-import productitem2 from '/public/image/productitem2.png'
-import productitem3 from '/public/image/productitem3.png'
-import productitem4 from '/public/image/productitem4.png'
-import leftarrow from "/public/icons/darkleftarrow.svg"
-import rightarrow from "/public/icons/darkrightarrow.svg"
+import lefcolum from '/image/leftcolum.png'
+import productitem1 from '/image/productitem1.png'
+import productitem2 from '/image/productitem2.png'
+import productitem3 from '/image/productitem3.png'
+import productitem4 from '/image/productitem4.png'
+import leftarrow from "/icons/darkleftarrow.svg"
+import rightarrow from "/icons/darkrightarrow.svg"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -157,7 +157,7 @@ export const Order = () => {
                                                     <>
                                                         <SwiperSlide key={index}>
                                                             <div className="  bg-white ">
-                                                                <img src={`/public/image/${vases.img}`} alt={vases}
+                                                                <img src={`/image/${vases.img}`} alt={vases}
                                                                     className=" mb-2 w-full max-w-[360px]  h-f object-cover "
                                                                 />
                                                                 <p className="text-sm font-medium">{vases.name}</p>
