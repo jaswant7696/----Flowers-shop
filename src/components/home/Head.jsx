@@ -26,7 +26,7 @@ const Head = () => {
             "image":"/public/image/card_item2.png",
             "text":"Live Plants ",
             "button_text":"Shop now",
-            "arroy":"arrow_right1.svg"
+            "arroy":"arrow_right1.svg "
         },
         {
             "image":"/public/image/card_item3.png",
