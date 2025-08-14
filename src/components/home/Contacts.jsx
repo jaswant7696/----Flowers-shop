@@ -82,12 +82,22 @@ const Contacts = () => {
                             <div className=''>
                                 <h1 className='font-medium text-[38px] leading-[45.6px] text-black-black_header py-4 sm:text-center '>Follow us</h1>
                             </div>
-                            <div className='sm:border-l gap-8 sm:justify-center pt-2 pb-4 sm:pb-0 border-black-black_header flex'>
-                                <img className=' max-w-6' src={icon3} alt="icon" />
-                                <img className='max-w-6' src={icon4} alt="icon" />
-                                <img className='max-w-6' src={icon5} alt="icon" />
-                                <img className='max-w-6' src={icon6} alt="icon" />
-                                <img className='max-w-6' src={icon7} alt="icon" />
+                            <div className='sm:border-l gap-8 items-center sm:justify-center pt-2 pb-4 sm:pb-0 border-black-black_header flex'>
+                                <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
+                                    <img className='max-w-6 ' src={"/icons/Pinterest.svg"} alt="icon" />
+                                </a>
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                    <img className='max-w-6 ' src={"/icons/Instagram.svg"} alt="icon" />
+                                </a>
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                    <img className='max-w-6 ' src={"/icons/Facebook.svg"} alt="icon" />
+                                </a>
+                                <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                                    <img className='max-w-6 ' src={"/icons/Twitter.svg"} alt="icon" />
+                                </a>
+                                <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
+                                    <img className='max-w-6 ' src={"/icons/Telegram.svg"} alt="icon" />
+                                </a>
 
                             </div>
                         </div>

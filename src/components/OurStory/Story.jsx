@@ -22,30 +22,42 @@ export const Story = () => {
                         <div className='mt-16  '>
                             <div className=' justify-between m-auto flex  mt-6 max-w-[368px] w-full'>
                                 <div className='border rounded-[100%] border-black-black_header p-3'>
-                                <img className='max-w-6   w-full' src={icon3} alt="icon" />
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                               
+                                        <img className='max-w-6   w-full' src={icon3} alt="icon" />
+                                    </a>
                                 </div>
                                 <div className='border rounded-[100%] border-black-black_header p-3'>
-                                <img className='max-w-6  w-full' src={icon4} alt="icon" /> 
+
+                                <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
+                                        <img className='max-w-6  w-full' src={icon4} alt="icon" />
+                                    </a>
                                 </div>
                                 <div className='border rounded-[100%] border-black-black_header p-3'>
-                                <img className='max-w-6 w-full' src={icon5} alt="icon" />
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                        <img className='max-w-6 w-full' src={icon5} alt="icon" />
+                                    </a>
                                 </div>
                                 <div className='border rounded-[100%] border-black-black_header p-3'>
-                                <img className='max-w-6 w-full' src={icon6} alt="icon" />
+                                    <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                                        <img className='max-w-6 w-full' src={icon6} alt="icon" />
+                                    </a>
                                 </div>
                                 <div className='border rounded-[100%] border-black-black_header p-3'>
-                                <img className='max-w-6 w-full' src={icon7} alt="icon" />
+                                    <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
+                                        <img className='max-w-6 w-full' src={icon7} alt="icon" />
+                                    </a>
                                 </div>
-                                
+
                             </div>
                         </div>
-                    </div>
-                    <div  className=''>
+                    </div >
+                    <div className=''>
                         <img className='h-full w-full' src={story} alt="" />
                     </div>
-                </div>
-            </div>
-        </div>
+                </div >
+            </div >
+        </div >
     )
 }
 

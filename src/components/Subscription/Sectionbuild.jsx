@@ -48,7 +48,7 @@ import section from '../json/sectionbuild.json'
                             <div className='mt-10'>
                                 <h1 className='font-normal text-[28px] text-black-black_header leading-[120%]' >How often do you want flowers delivered ?</h1>
                                 <p className='font-normal text-base text-black-black_header leading-[140%] mt-4'>Select the delivery frequency</p>
-                                <div className='gap-4 sm:flex  w-full  mt-6'>
+                                <div className='gap-4 sm:flex  w-full max-w-[300px] mt-6'>
                                     <button className='font-medium text-base w-full leading-[120%] border border-black-black_header max-w-[202px]  py-[18px]'> Monthly</button>
                                     <button className='font-medium text-base w-full mt-4 sm:mt-0 leading-[120%] border max-w-[202px]  border-black-black_header py-[18px] items-center'>Bi-Weekly</button>
                                     <button className='font-medium text-base w-full mt-4 sm:mt-0 leading-[120%] border border-black-black_header max-w-[202px] py-[18px]  '>Weekly</button>

@@ -52,8 +52,7 @@ const Content = () => {
                         <button className='sm:block hidden'  ref={prevRef}><img className='max-w-8 ' src={LeftArrow} alt="" /></button>
                         <Swiper
                             cssMode={true}
-                            navigation={true}
-                            pagination={true}
+                           
                             mousewheel={true}
                             keyboard={true}
                             loop={true}

@@ -40,11 +40,21 @@ export const Footer = () => {
             <div className='mt-6'>
               <h1 className='text-gray-gray_color  font-medium leading-[120%] text-lg sm:text-[21px]'>Follow Us</h1>
               <div className=' flex justify-between mt-6 max-w-[280px]'>
+              <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
                 <img className='max-w-6 w-full' src={"/icons/Pinterest.svg"} alt="icon" />
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                 <img className='max-w-6 w-full' src={"/icons/Instagram.svg"} alt="icon" />
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                 <img className='max-w-6 w-full' src={"/icons/Facebook.svg"} alt="icon" />
+                </a>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
                 <img className='max-w-6 w-full' src={"/icons/Twitter.svg"} alt="icon" />
+                </a>
+                <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
                 <img className='max-w-6 w-full' src={"/icons/Telegram.svg"} alt="icon" />
+                </a>
               </div>
             </div>
           </div>

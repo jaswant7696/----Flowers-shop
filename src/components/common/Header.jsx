@@ -63,9 +63,9 @@ export const Header = () => {
 
 
 
-                                <div onClick={() => SetSlide(true)} className={`fixed top-0 h-full z-50 md:hidden transition-all duration-500 ${menu ? "left-0 w-[0px]" : "left-[-100%] w-[300px]"}`} >
+                                <div onClick={() => SetSlide(true)} className={`absolute top-0 left-0  h-full z-50 md:hidden transition-all duration-500 ${ !menu ? " w-[0px]  opacity-0 -z-50" : " opacity-100 z-50  w-[320px]"}`} >
 
-                                    <div className="bg-white-white_color w-[320px] right-0 h-full flex flex-col backdrop-blur-3xl border-x border-y border-black-black_header shadow-lg">
+                                    <div className={`bg-white-white_color  right-0 h-full flex flex-col backdrop-blur-3xl border-r  border-black-black_header shadow-lg `}>
                                         <button
                                             className="border-b border-black-black_header p-[18.5px]"
                                             onClick={() => {
@@ -77,10 +77,12 @@ export const Header = () => {
                                         </button>
                                         {
                                             menu &&
+                                        <div className="bg-[#ffffff] border-r border-black-black_header">
+
                                             <>
                                                 <ul>
-                                                    <Link onClick={() => setMenu(false)} to={"/sing"}>
-                                                        <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
+                                                    <Link  onClick={() => setMenu(false)} to={"/sing"}>
+                                                        <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header  p-6">
                                                             Sign in
                                                         </li>
                                                     </Link>
@@ -117,6 +119,10 @@ export const Header = () => {
                                                     </li>
                                                 </ul>
                                             </>
+                                            <div>
+                                                jiaDCASDC
+                                            </div>
+                                        </div>
                                         }
 
                                     </div>
@@ -184,7 +190,7 @@ export const Header = () => {
                                 <div className='py-10 sm:px-10 px-4   border-t border-black-black_header'>
                                     <div className=' '>
 
-                                        <textarea className='outline-none text-gray-gray_color font-normal text-base pb-24 leading-[140%] ' name="Gift Message" placeholder='Gift Message' ></textarea>
+                                        <textarea className='outline-none text-gray-gray_color font-normal w-full text-base pb-24 leading-[140%] ' name="Gift Message" placeholder='Gift Message' ></textarea>
 
                                     </div>
                                 </div>
