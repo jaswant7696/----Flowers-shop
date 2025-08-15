@@ -63,7 +63,7 @@ export const Header = () => {
 
 
 
-                                <div onClick={() => SetSlide(true)} className={`absolute top-0 left-0  h-full z-50 md:hidden transition-all duration-500 ${ !menu ? " w-[0px]  opacity-0 -z-50" : " opacity-100 z-50  w-[320px]"}`} >
+                                <div onClick={() => SetSlide(true)} className={`absolute top-0 left-0  h-full z-50 md:hidden transition-all duration-500 ${!menu ? " w-[0px]  opacity-0 -z-50" : " opacity-100 z-50  w-[320px]"}`} >
 
                                     <div className={`bg-white-white_color  right-0 h-full flex flex-col backdrop-blur-3xl border-r  border-black-black_header shadow-lg `}>
                                         <button
@@ -77,52 +77,67 @@ export const Header = () => {
                                         </button>
                                         {
                                             menu &&
-                                        <div className="bg-[#ffffff] border-r border-black-black_header">
+                                            <div className="bg-[#ffffff] border-r border-black-black_header">
 
-                                            <>
-                                                <ul>
-                                                    <Link  onClick={() => setMenu(false)} to={"/sing"}>
-                                                        <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header  p-6">
-                                                            Sign in
+                                                <>
+                                                    <ul>
+                                                        <Link onClick={() => setMenu(false)} to={"/sing"}>
+                                                            <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header  p-6">
+                                                                Sign in
+                                                            </li>
+                                                        </Link>
+                                                        <Link onClick={() => setMenu(false)} to={"/Product"}>
+                                                            <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
+                                                                Shop
+                                                            </li>
+                                                        </Link>
+                                                        <Link onClick={() => setMenu(false)} to={"/Subscription"}>
+                                                            <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
+                                                                Service
+                                                            </li>
+                                                        </Link>
+                                                        <Link onClick={() => setMenu(false)} to={""}>
+                                                            <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
+                                                                Contact
+                                                            </li>
+                                                        </Link>
+                                                        <Link onClick={() => setMenu(false)} to={"/Ourstory"}>
+                                                            <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
+                                                                About us
+                                                            </li>
+                                                        </Link>
+                                                    </ul>
+                                                    <ul className="p-6">
+                                                        <li className="sm:text-base text-sm font-medium leading-[120%]">
+                                                            Shipping & returns
                                                         </li>
-                                                    </Link>
-                                                    <Link onClick={() => setMenu(false)} to={"/Product"}>
-                                                        <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
-                                                            Shop
+                                                        <li className="sm:text-base text-sm font-medium leading-[120%] mt-4">
+                                                            Terms & conditions
                                                         </li>
-                                                    </Link>
-                                                    <Link onClick={() => setMenu(false)} to={"/Subscription"}>
-                                                        <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
-                                                            Service
+                                                        <li className="sm:text-base text-sm font-medium leading-[120%] mt-4">
+                                                            Privacy policy
                                                         </li>
-                                                    </Link>
-                                                    <Link onClick={() => setMenu(false)} to={""}>
-                                                        <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
-                                                            Contact
-                                                        </li>
-                                                    </Link>
-                                                    <Link onClick={() => setMenu(false)} to={"/Ourstory"}>
-                                                        <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
-                                                            About us
-                                                        </li>
-                                                    </Link>
-                                                </ul>
-                                                <ul className="p-6">
-                                                    <li className="sm:text-base text-sm font-medium leading-[120%]">
-                                                        Shipping & returns
-                                                    </li>
-                                                    <li className="sm:text-base text-sm font-medium leading-[120%] mt-4">
-                                                        Terms & conditions
-                                                    </li>
-                                                    <li className="sm:text-base text-sm font-medium leading-[120%] mt-4">
-                                                        Privacy policy
-                                                    </li>
-                                                </ul>
-                                            </>
-                                            <div>
-                                                jiaDCASDC
+                                                    </ul>
+                                                    <div className=' flex justify-between py-6 px-6 w-full max-w-[320px] border-y border-black-black_header'>
+                                                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                                            <img className='max-w-6 w-full' src={"/icons/Instagram.svg"} alt="icon" />
+                                                        </a>
+                                                        <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
+                                                            <img className='max-w-6 w-full' src={"/icons/Pinterest.svg"} alt="icon" />
+                                                        </a>
+                                                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                                            <img className='max-w-6 w-full' src={"/icons/Facebook.svg"} alt="icon" />
+                                                        </a>
+                                                        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                                                            <img className='max-w-6 w-full' src={"/icons/Twitter.svg"} alt="icon" />
+                                                        </a>
+                                                        <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
+                                                            <img className='max-w-6 w-full' src={"/icons/Telegram.svg"} alt="icon" />
+                                                        </a>
+                                                    </div>
+                                                </>
+
                                             </div>
-                                        </div>
                                         }
 
                                     </div>
@@ -155,7 +170,7 @@ export const Header = () => {
                     </>
 
                     <>
-                        <div className={`${card ? "hidden" : "block"}   h-screen bg-opacity-100 backdrop-blur-sm z-40  
+                        <div className={`${card ? "hidden" : "block"} overflow-y-auto   h-screen bg-opacity-100 backdrop-blur-sm z-40  
                         lg:w-[50%] w-full lg:max-w-[720px]  bg-white-white_color justify-self-end absolute top-[1px] border-r  border-t-0 border-black-black_header border-b-0 `}>
                             <div onClick={(e) => e.preventDefault()} className=' border-l sticky border-0 border-black-black_header '>
                                 <div className='flex justify-between sm:px-10 px-4 top-0 md:py-[29.5px] py-[18.5px]' onClick={() => setCard(!card)}>
