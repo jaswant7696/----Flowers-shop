@@ -54,7 +54,7 @@ export const Header = () => {
                         </div>
 
 
-                        <div className='md:hidden flex relative justify-between border border-black-black_header'>
+                        <div className='md:hidden overflow-auto  flex relative justify-between border border-black-black_header'>
                             <div className="relative border-r transition-0.2s ease-out  border-black-black_header py-4 px-4">
                                 <button onClick={() => setMenu(!menu)}>
                                     <img className={`${menu ? "hidden" : "block"}`} src={menu1} alt="menu" />

@@ -23,7 +23,7 @@ export const Sectioncheckout = () => {
                         <div className='sm:px-20 px-4 '>
 
                             <>
-                                <div >
+                                <div className='flex gap-3 mt-10' >
                                     <div className='flex gap-2'>
                                         <h1 className={`font-medium text-sm  leading-[120%] ${stap === 1 ? "text-black-black_header" : "text-gray-gray_color"}`}>INFORMATION</h1>
                                         <img src={vector} alt="vector" />

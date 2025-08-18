@@ -29,7 +29,7 @@ export const Story = () => {
                                 </div>
                                 <div className='border rounded-[100%] border-black-black_header p-3'>
 
-                                <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer"> 
                                         <img className='max-w-6  w-full' src={icon4} alt="icon" />
                                     </a>
                                 </div>
