@@ -56,7 +56,7 @@ export const Header = () => {
 
                         <div className='md:hidden overflow-auto  flex relative justify-between border border-black-black_header'>
                             <div className="relative border-r border-black-black_header py-4 px-4">
-                                {/* Toggle Button */}
+                              
                                 <button onClick={() => setMenu(!menu)}>
                                     <img
                                         className={`${menu ? "hidden" : "block"}`}
@@ -70,13 +70,13 @@ export const Header = () => {
                                     />
                                 </button>
 
-                                {/* Sidebar */}
+                               
                                 <div
                                     className={`fixed top-0 border-x border-t border-black-black_header left-0 h-full z-50 md:hidden transition-all duration-300 ease-out
                                    ${menu ? "w-[320px] opacity-100" : "w-0 opacity-0 overflow-hidden"}`}
                                 >
                                     <div className="bg-white-white_color h-full flex flex-col  shadow-lg">
-                                        {/* Close button */}
+                                      
                                         <button
                                             className="border-b border-black-black_header p-[18.5px]"
                                             onClick={() => setMenu(false)}

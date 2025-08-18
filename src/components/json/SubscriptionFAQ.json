@@ -1,38 +1,38 @@
 [
     {
         "text":"How often will I get a new bouquet?",
-        "img":"arrow_bottom_right.svg",
-        "imge":"arrow_bottom_rightdown.svg",
+        "img":"/icons/arrow_bottom_right.svg",
+        "imge":"/icons/arrow_bottom_rightdown.svg",
         "line":"Our subscriptions allow you to select a delivery frequency that best suits your needs - either weekly, bi-weekly, or monthly. You can also choose the number of deliveries for your subscription. Choose any combination that works for you!"
     },
     {
         "text":"Can i send subscription like as a gift ?",
-        "img":"arrow_bottom_right.svg",
-        "imge":"arrow_bottom_rightdown.svg",
+        "img":"/icons/arrow_bottom_right.svg",
+        "imge":"/icons/arrow_bottom_rightdown.svg",
         "line":"Our subscriptions allow you to select a delivery frequency that best suits your needs - either weekly, bi-weekly, or monthly. You can also choose the number of deliveries for your subscription. Choose any combination that works for you!"
     },
     {
         "text":"Can I choose which bouquet I get ?",
-        "img":"arrow_bottom_right.svg",
-        "imge":"arrow_bottom_rightdown.svg",
+        "img":"/icons/arrow_bottom_right.svg",
+        "imge":"/icons/arrow_bottom_rightdown.svg",
         "line":"Our subscriptions allow you to select a delivery frequency that best suits your needs - either weekly, bi-weekly, or monthly. You can also choose the number of deliveries for your subscription. Choose any combination that works for you!"
     },
     {
         "text":"Can I change the shipping address ?",
-        "img":"arrow_bottom_right.svg",
-        "imge":"arrow_bottom_rightdown.svg",
+        "img":"/icons/arrow_bottom_right.svg",
+        "imge":"/icons/arrow_bottom_rightdown.svg",
         "line":"Our subscriptions allow you to select a delivery frequency that best suits your needs - either weekly, bi-weekly, or monthly. You can also choose the number of deliveries for your subscription. Choose any combination that works for you!"
     },
     {
         "text":"What day will the subscription bouquet come?",
-        "img":"arrow_bottom_right.svg",
-        "imge":"arrow_bottom_rightdown.svg",
+        "img":"/icons/arrow_bottom_right.svg",
+        "imge":"/icons/arrow_bottom_rightdown.svg",
         "line":"Our subscriptions allow you to select a delivery frequency that best suits your needs - either weekly, bi-weekly, or monthly. You can also choose the number of deliveries for your subscription. Choose any combination that works for you!"
     },
     {
         "text":"Can I suspend my subscription to flowers ?",
-        "img":"arrow_bottom_right.svg",
-        "imge":"arrow_bottom_rightdown.svg",
+        "img":"/icons/arrow_bottom_right.svg",
+        "imge":"/icons/arrow_bottom_rightdown.svg",
         "line":"Our subscriptions allow you to select a delivery frequency that best suits your needs - either weekly, bi-weekly, or monthly. You can also choose the number of deliveries for your subscription. Choose any combination that works for you!"
     }
 ]

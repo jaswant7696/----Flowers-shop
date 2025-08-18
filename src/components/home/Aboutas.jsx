@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 const Aboutas = () => {
     return (
@@ -21,7 +23,7 @@ const Aboutas = () => {
                                 </div>
                                 <div className='mt-16 mx-4 sm:mx-20 mb-10 sm:mb-20 group '>
                                     <div className='border border-black-black_header sm:max-w-[175px]  text-center hover:bg-black-black_header bg-white-white_color'>
-                                       <a href="/Ourstory"> <button className={`transition-all  group-hover:scale-110 duration-300   py-[18.5px] font-medium text-sm sm:text-base leading-[100%] text-black-black_header group-hover:text-white-white_color `}>LEARN MORE</button></a>
+                                    <Link to={"/Ourstory"}> <button className={`transition-all  group-hover:scale-110 duration-300   py-[18.5px] font-medium text-sm sm:text-base leading-[100%] text-black-black_header  hover:text-white-white_color `}>LEARN MORE</button></Link>
                                     </div>
                                 </div>
                             </div>
