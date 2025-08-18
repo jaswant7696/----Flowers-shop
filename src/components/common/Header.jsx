@@ -55,94 +55,83 @@ export const Header = () => {
 
 
                         <div className='md:hidden overflow-auto  flex relative justify-between border border-black-black_header'>
-                            <div className="relative border-r transition-0.2s ease-out  border-black-black_header py-4 px-4">
+                            <div className="relative border-r border-black-black_header py-4 px-4">
+                                {/* Toggle Button */}
                                 <button onClick={() => setMenu(!menu)}>
-                                    <img className={`${menu ? "hidden" : "block"}`} src={menu1} alt="menu" />
-                                    <img className={`max-w-6 w-full ${menu ? "block" : "hidden"}`} src={cross} alt="close" />
+                                    <img
+                                        className={`${menu ? "hidden" : "block"}`}
+                                        src={menu1}
+                                        alt="menu"
+                                    />
+                                    <img
+                                        className={`max-w-6 w-full ${menu ? "block" : "hidden"}`}
+                                        src={cross}
+                                        alt="close"
+                                    />
                                 </button>
 
-
-
-                                <div onClick={() => SetSlide(true)} className={`absolute top-0 left-0  h-full z-50 md:hidden transition-all duration-500 ${!menu ? " w-[0px]  opacity-0 -z-50" : " opacity-100 z-50  w-[320px]"}`} >
-
-                                    <div className={`bg-white-white_color  right-0 h-full flex flex-col backdrop-blur-3xl border-r  border-black-black_header shadow-lg `}>
+                                {/* Sidebar */}
+                                <div
+                                    className={`fixed top-0 border-x border-t border-black-black_header left-0 h-full z-50 md:hidden transition-all duration-300 ease-out
+                                   ${menu ? "w-[320px] opacity-100" : "w-0 opacity-0 overflow-hidden"}`}
+                                >
+                                    <div className="bg-white-white_color h-full flex flex-col  shadow-lg">
+                                        {/* Close button */}
                                         <button
                                             className="border-b border-black-black_header p-[18.5px]"
-                                            onClick={() => {
-                                                setMenu(false);
-                                                SetSlide(false);
-                                            }}
+                                            onClick={() => setMenu(false)}
                                         >
                                             <img className="max-w-6 w-full" src={cross} alt="close" />
                                         </button>
-                                        {
-                                            menu &&
-                                            <div className="bg-[#ffffff] border-r border-black-black_header">
 
-                                                <>
-                                                    <ul>
-                                                        <Link onClick={() => setMenu(false)} to={"/sing"}>
-                                                            <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header  p-6">
-                                                                Sign in
-                                                            </li>
-                                                        </Link>
-                                                        <Link onClick={() => setMenu(false)} to={"/Product"}>
-                                                            <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
-                                                                Shop
-                                                            </li>
-                                                        </Link>
-                                                        <Link onClick={() => setMenu(false)} to={"/Subscription"}>
-                                                            <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
-                                                                Service
-                                                            </li>
-                                                        </Link>
-                                                        <Link onClick={() => setMenu(false)} to={""}>
-                                                            <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
-                                                                Contact
-                                                            </li>
-                                                        </Link>
-                                                        <Link onClick={() => setMenu(false)} to={"/Ourstory"}>
-                                                            <li className="border-b font-medium sm:text-[21px] text-lg leading-[120%] border-black-black_header p-6">
-                                                                About us
-                                                            </li>
-                                                        </Link>
-                                                    </ul>
-                                                    <ul className="p-6">
-                                                        <li className="sm:text-base text-sm font-medium leading-[120%]">
-                                                            Shipping & returns
-                                                        </li>
-                                                        <li className="sm:text-base text-sm font-medium leading-[120%] mt-4">
-                                                            Terms & conditions
-                                                        </li>
-                                                        <li className="sm:text-base text-sm font-medium leading-[120%] mt-4">
-                                                            Privacy policy
-                                                        </li>
-                                                    </ul>
-                                                    <div className=' flex justify-between py-6 px-6 w-full max-w-[320px] border-y border-black-black_header'>
-                                                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                                                            <img className='max-w-6 w-full' src={"/icons/Instagram.svg"} alt="icon" />
-                                                        </a>
-                                                        <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
-                                                            <img className='max-w-6 w-full' src={"/icons/Pinterest.svg"} alt="icon" />
-                                                        </a>
-                                                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                                                            <img className='max-w-6 w-full' src={"/icons/Facebook.svg"} alt="icon" />
-                                                        </a>
-                                                        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                                                            <img className='max-w-6 w-full' src={"/icons/Twitter.svg"} alt="icon" />
-                                                        </a>
-                                                        <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
-                                                            <img className='max-w-6 w-full' src={"/icons/Telegram.svg"} alt="icon" />
-                                                        </a>
-                                                    </div>
-                                                </>
+                                        {/* Links */}
+                                        <ul>
+                                            <Link onClick={() => setMenu(false)} to={"/sing"}>
+                                                <li className="border-b font-medium text-lg p-6">Sign in</li>
+                                            </Link>
+                                            <Link onClick={() => setMenu(false)} to={"/Product"}>
+                                                <li className="border-b font-medium text-lg p-6">Shop</li>
+                                            </Link>
+                                            <Link onClick={() => setMenu(false)} to={"/Subscription"}>
+                                                <li className="border-b font-medium text-lg p-6">Service</li>
+                                            </Link>
+                                            <Link onClick={() => setMenu(false)} to={""}>
+                                                <li className="border-b font-medium text-lg p-6">Contact</li>
+                                            </Link>
+                                            <Link onClick={() => setMenu(false)} to={"/Ourstory"}>
+                                                <li className="border-b font-medium text-lg p-6">About us</li>
+                                            </Link>
+                                        </ul>
 
-                                            </div>
-                                        }
+                                        {/* Footer links */}
+                                        <ul className="p-6">
+                                            <li className="text-sm font-medium">Shipping & returns</li>
+                                            <li className="mt-4 text-sm font-medium">Terms & conditions</li>
+                                            <li className="mt-4 text-sm font-medium">Privacy policy</li>
+                                        </ul>
 
+                                        {/* Social icons */}
+                                        <div className="flex justify-between py-6 px-6 w-full border-t border-black-black_header">
+                                            <a href="https://www.instagram.com/" target="_blank">
+                                                <img className="max-w-6 w-full" src={"/icons/Instagram.svg"} alt="icon" />
+                                            </a>
+                                            <a href="https://www.pinterest.com/" target="_blank">
+                                                <img className="max-w-6 w-full" src={"/icons/Pinterest.svg"} alt="icon" />
+                                            </a>
+                                            <a href="https://www.facebook.com/" target="_blank">
+                                                <img className="max-w-6 w-full" src={"/icons/Facebook.svg"} alt="icon" />
+                                            </a>
+                                            <a href="https://www.twitter.com/" target="_blank">
+                                                <img className="max-w-6 w-full" src={"/icons/Twitter.svg"} alt="icon" />
+                                            </a>
+                                            <a href="https://t.me/" target="_blank">
+                                                <img className="max-w-6 w-full" src={"/icons/Telegram.svg"} alt="icon" />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div className='border-l mr-[2px] border-black-black_header  py-4 px-4'>
                                 <button onClick={() => setShop1(!shop1)} >
                                     <img onClick={() => setCard(!card)} className={`${shop1 ? "hidden" : "block"}`} src={shop} alt="shop" />
@@ -169,7 +158,7 @@ export const Header = () => {
                         </div>
                     </>
 
-                    <>
+                    <div className='fixed top-0 left-0 right-0 w-full bg-white-white_color  z-10'>
                         <div className={`${card ? "hidden" : "block"} overflow-y-auto   h-screen bg-opacity-100 backdrop-blur-sm z-40  
                         lg:w-[50%] w-full lg:max-w-[720px]  bg-white-white_color justify-self-end absolute top-[1px] border-r  border-t-0 border-black-black_header border-b-0 `}>
                             <div onClick={(e) => e.preventDefault()} className=' border-l sticky border-0 border-black-black_header '>
@@ -214,8 +203,8 @@ export const Header = () => {
                                         <h1 className='font-normal text-sm leading-[120%] text-black-black_header '>Shipping & taxes calculated at checkout <br /> Free standard shipping within Kyiv</h1>
                                     </div>
                                 </div>
-                                <div className=''>
-                                    <div className='bg-black-black_header text-center'>
+                                <div onClick={() => setCard(!card)} className=''>
+                                    <div onClick={() => setCard(tue)} className='bg-black-black_header text-center'>
                                         <Link to={"/Contatinfo"}>  <button className='text-white-white_color my-[19px] font-medium text-base leading-[120%]'>CHECK OUT</button></Link>
                                     </div>
                                 </div>
@@ -223,7 +212,7 @@ export const Header = () => {
                         </div>
 
 
-                    </>
+                    </div>
                 </div>
             </div>
         </>
